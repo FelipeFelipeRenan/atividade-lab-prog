@@ -33,24 +33,10 @@ do
     done
 done < $file
 
-# Mostra as palavras e a
-# quantidade de vezes em que elas
-# apareceram
-# for chave in ${palavras[@]}
-# do
-#     tput bold;
-#     echo -n "$chave"; 
-#     tput sgr0
-#     echo -n " apareceu "
-#     tput bold; 
-#     echo -n ${palavras[$chave]} ; 
-#     tput sgr0
-#     echo " vez(es)." 
-# done 
-
 for chave in ${palavras[@]}
 do
     echo "${palavras[$chave]} ocorrências de $chave"  >>  contar.txt
+    
 done
 
 
@@ -63,4 +49,8 @@ rm teste.txt
 
 show=$(cat final.txt )
 
+echo "---------------"
+
 tail -3 final.txt
+
+echo "---------------"
