@@ -51,6 +51,6 @@ show=$(cat final.txt )
 
 echo "---------------"
 
-tail -3 final.txt
+tail -4 final.txt
 
 echo "---------------"
