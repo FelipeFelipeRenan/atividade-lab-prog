@@ -1,3 +1,5 @@
+#!/bin/bash
+
 touch teste.txt
 touch contar.txt
 
